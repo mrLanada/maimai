@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Year with You, My Love</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="main-page" id="mainPage">
+        <h1>A Year with You, My Love</h1>
+        <div class="sidebar-container">
+            <div class="sidebar poems-sidebar">
+                <button onclick="showSubmenu('poemsSubmenu')">12 random thought of mine</button>
+                <div id="poemsSubmenu" class="submenu">
+                    <!-- Buttons for poems 1 to 12 -->
+                    <button onclick="showContent('poem', 1)">1</button>
+                    <button onclick="showContent('poem', 2)">2</button>
+                    <button onclick="showContent('poem', 3)">3</button>
+                    <button onclick="showContent('poem', 4)">4</button>
+                    <button onclick="showContent('poem', 5)">5</button>
+                    <button onclick="showContent('poem', 6)">6</button>
+                    <button onclick="showContent('poem', 7)">7</button>
+                    <button onclick="showContent('poem', 8)">8</button>
+                    <button onclick="showContent('poem', 9)">9</button>
+                    <button onclick="showContent('poem', 10)">10</button>
+                    <button onclick="showContent('poem', 11)">11</button>
+                    <button onclick="showContent('poem', 12)">12</button>
+                </div>
+            </div>
+            <div class="sidebar songs-sidebar">
+                <button onclick="showSubmenu('songsSubmenu')">Playlist that reminds me of you</button>
+                <div id="songsSubmenu" class="submenu">
+                    <!-- Buttons for songs 1 to 12 -->
+                    <button onclick="showContent('song', 1)">Until I Found You</button>
+                    <button onclick="showContent('song', 2)">When I Met You</button>
+                    <button onclick="showContent('song', 3)">Daylight</button>
+                    <button onclick="showContent('song', 4)">Can't Help Falling In Love</button>
+                    <button onclick="showContent('song', 5)">Marry Your Daughter</button>
+                    <button onclick="showContent('song', 6)">Get You</button>
+                    <button onclick="showContent('song', 7)">Always</button>
+                    <button onclick="showContent('song', 8)">Best Part</button>
+                    <button onclick="showContent('song', 9)">Here With Me</button>
+                    <button onclick="showContent('song', 10)">Die For You</button>
+                    <button onclick="showContent('song', 11)">There's Nothing Holdin' Me Back</button>
+                    <button onclick="showContent('song', 12)">Ikaw Lang</button>
+                </div>
+            </div>
+            <div class="sidebar pictures-sidebar">
+                <button onclick="showSubmenu('picturesSubmenu')">Pictures of You</button>
+                <div id="picturesSubmenu" class="submenu">
+                    <!-- Buttons for pictures 1 to 12 -->
+                    <button onclick="showContent('picture', 1)">1</button>
+                    <button onclick="showContent('picture', 2)">2</button>
+                    <button onclick="showContent('picture', 3)">3</button>
+                    <button onclick="showContent('picture', 4)">4</button>
+                    <button onclick="showContent('picture', 5)">5</button>
+                    <button onclick="showContent('picture', 6)">6</button>
+                    <button onclick="showContent('picture', 7)">7</button>
+                    <button onclick="showContent('picture', 8)">8</button>
+                    <button onclick="showContent('picture', 9)">9</button>
+                    <button onclick="showContent('picture', 10)">10</button>
+                    <button onclick="showContent('picture', 11)">11</button>
+                    <button onclick="showContent('picture', 12)">12</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-page" id="contentPage">
+        <div class="content" id="content">
+            <!-- Content will be dynamically added here -->
+        </div>
+        <!-- Back button -->
+       <button onclick="goBack()" class="back-button">←</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
